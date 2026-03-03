@@ -3,152 +3,258 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Proyecto de investigación para evaluar el impacto de las incubadoras ESA-BIC sobre desempeño empresarial y desarrollo regional. FCT-24-19933." />
+  <meta name="theme-color" content="#003247" />
+  <link rel="canonical" href="https://esabic-impact-evaluation.unileon.es/" />
+  <meta property="og:title" content="Evaluación del impacto de incubadoras ESA-BIC" />
+  <meta property="og:description" content="Evaluación del programa ESA-BIC sobre crecimiento, supervivencia, empleo cualificado y desarrollo regional." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://esabic-impact-evaluation.unileon.es/" />
+  <meta property="og:locale" content="es_ES" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Evaluación del impacto de incubadoras ESA-BIC" />
+  <meta name="twitter:description" content="Evaluación del programa ESA-BIC sobre crecimiento, supervivencia, empleo cualificado y desarrollo regional." />
   <title>Evaluación ESA-BICs | Proyecto FCT-24-19933</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="assets/css/site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchProject",
+    "name": "Evaluación del impacto de las incubadoras ESA-BIC",
+    "alternateName": "FCT-24-19933",
+    "description": "Proyecto de investigación aplicado para medir el efecto del programa ESA-BIC sobre desempeño empresarial y desarrollo regional.",
+    "url": "https://esabic-impact-evaluation.unileon.es/",
+    "funder": {
+      "@type": "Organization",
+      "name": "Ministerio de Ciencia, Innovación y Universidades"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Universidad de León",
+      "url": "https://www.unileon.es"
+    }
+  }
+  </script>
 </head>
-<body>
+<body data-page="index">
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html">Evaluación ESA-BICs<small>FCT-24-19933</small></a>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">☰</button>
       <nav id="main-nav" class="main-nav" data-main-nav>
         <ul>
-          <li><a href="#inicio" class="current">Inicio</a></li>
-          <li><a href="#proyecto">Proyecto</a></li>
-          <li><a href="#metodologia">Metodología</a></li>
-          <li><a href="#plan">Plan</a></li>
-          <li><a href="#equipo">Equipo</a></li>
-          <li><a href="elements.html">Recursos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#inicio" class="current" data-i18n="nav.inicio">Inicio</a></li>
+          <li><a href="#proyecto" data-i18n="nav.objeto">Objetivo</a></li>
+          <li><a href="#plan" data-i18n="nav.plan">Fases</a></li>
+          <li><a href="#recursos" data-i18n="nav.recursos">Resultados</a></li>
+          <li><a href="#equipo" data-i18n="nav.equipo">Equipo</a></li>
         </ul>
       </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">
+        <span class="flag-icon" data-lang-flag></span>
+      </button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">☰</button>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero hero--featured">
       <div class="container">
-        <div class="hero-panel">
-          <p class="kicker">Convocatoria 2024 · Innovación pública</p>
-          <h1>Evaluación del impacto de las incubadoras de la Agencia Espacial Europea</h1>
-          <p>Proyecto de investigación aplicado para medir el efecto del programa ESA-BIC sobre desempeño empresarial y desarrollo regional, con base empírica y orientación a política pública.</p>
-          <div class="actions">
-            <a class="btn primary" href="#proyecto">Explorar proyecto</a>
-            <a class="btn ghost" href="elements.html">Ver recursos</a>
+        <div class="hero-panel hero-panel--immersive">
+          <p class="kicker" data-i18n="index.kicker">FECYT · Convocatoria I+P 2024 · FCT-24-19933</p>
+          <div class="hero-feature">
+            <div class="hero-copy">
+              <h1 data-i18n="index.h1">Evaluación del impacto de las incubadoras de la Agencia Espacial Europea</h1>
+              <p data-i18n="index.hero.p">Proyecto de investigación orientado a evaluar el impacto del programa ESA-BIC en Europa, con especial atención al crecimiento empresarial, el empleo cualificado y el impacto regional de las startups incubadas.</p>
+              <div class="actions">
+                <a class="btn primary" href="#proyecto" data-i18n="index.btn.explore">Explorar proyecto</a>
+                <a class="btn ghost" href="#recursos" data-i18n="index.btn.resources">Ver recursos</a>
+              </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <img src="assets/images/logo.png" alt="" class="hero-logo" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="container stat-grid">
-        <div class="section-head full">
-          <h2>Datos clave</h2>
-          <p>Indicadores de referencia del proyecto y su enfoque de evaluación.</p>
-        </div>
-        <article class="stat-card">
-          <strong>FCT-24-19933</strong>
-          <p>Referencia oficial del proyecto.</p>
-        </article>
-        <article class="stat-card">
-          <strong>Enfoque mixto</strong>
-          <p>Econometría avanzada y análisis cualitativo.</p>
-        </article>
-        <article class="stat-card">
-          <strong>Escala europea</strong>
-          <p>Comparación internacional con foco regional.</p>
-        </article>
-        <article class="stat-card">
-          <strong>Transferencia</strong>
-          <p>Recomendaciones prácticas para gestores públicos.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="proyecto" class="section">
+    <section id="proyecto" class="section section--dark">
       <div class="container">
         <div class="section-head">
-          <h2>Proyecto</h2>
-          <p>El objetivo es identificar resultados atribuibles a la incubación y aislar factores que explican diferencias de desempeño entre empresas incubadas y no incubadas.</p>
+          <h2 data-i18n="proyecto.h2">Objetivo y alcance</h2>
         </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Objetivo general</h3>
-            <p>Cuantificar impacto en crecimiento, supervivencia, empleo cualificado y atracción de inversión.</p>
+        <article class="editorial-lead accent-light">
+          <h3 data-i18n="proyecto.obj.h3">Objetivo general</h3>
+          <p data-i18n="proyecto.obj.p">Evaluar el impacto del programa ESA-BIC y de su red de incubadoras para medir su contribución al crecimiento empresarial, la innovación tecnológica, el empleo cualificado y el desarrollo regional, con el fin de mejorar el diseño y la efectividad del programa y aportar evidencia útil para gestores y responsables de política pública.</p>
+        </article>
+        <h3 class="editorial-subhead" data-i18n="proyecto.esp.h3">Objetivos específicos</h3>
+        <div class="feature-list feature-list--grid">
+          <article class="feature-item accent-red">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3"></ellipse><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"></path><path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path></svg>
+            </div>
+            <div class="feature-copy">
+              <h3 data-i18n="proyecto.card1.h3">Base de datos abierta</h3>
+              <p data-i18n="proyecto.card1.p">Construir una base de datos europea de empresas incubadas y de comparación, integrando información económica, financiera, tecnológica y territorial, y ponerla a disposición en formato abierto.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Preguntas clave</h3>
-            <p>¿Qué componentes del programa generan más valor? ¿Qué perfiles empresariales capturan mejor los beneficios?</p>
+          <article class="feature-item accent-blue">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19h16"></path><path d="M7 15l3-3 3 2 4-6"></path><path d="M7 19V9"></path><path d="M17 19v-6"></path></svg>
+            </div>
+            <div class="feature-copy">
+              <h3 data-i18n="proyecto.card2.h3">Innovación y crecimiento empresarial</h3>
+              <p data-i18n="proyecto.card2.p">Analizar en qué medida la incubación en ESA-BIC se asocia con mejores resultados en crecimiento empresarial, innovación tecnológica, acceso a financiación y generación de empleo cualificado.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Alcance esperado</h3>
-            <p>Generar evidencia útil para rediseño de instrumentos, mejora de gobernanza y escalabilidad de buenas prácticas.</p>
+          <article class="feature-item accent-amber">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="M12 12l7-4"></path><path d="M12 12l-7 4"></path><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <div class="feature-copy">
+              <h3 data-i18n="proyecto.card3.h3">Decisiones estratégicas y arraigo</h3>
+              <p data-i18n="proyecto.card3.p">Diseñar un cuestionario estructurado para estudiar por qué las startups eligen una ESA-BIC, cómo valoran el programa y qué factores influyen en su permanencia y vinculación con el territorio.</p>
+            </div>
+          </article>
+          <article class="feature-item accent-teal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2"></circle><circle cx="18" cy="7" r="2"></circle><circle cx="18" cy="17" r="2"></circle><path d="M8 12h5"></path><path d="M16.3 8.6l-2.8 2.1"></path><path d="M16.3 15.4l-2.8-2.1"></path></svg>
+            </div>
+            <div class="feature-copy">
+              <h3 data-i18n="proyecto.card4.h3">Impacto regional y política pública</h3>
+              <p data-i18n="proyecto.card4.p">Evaluar la contribución del programa al desarrollo regional, identificando efectos sobre ecosistemas de innovación, especialización tecnológica y capacidad de las incubadoras para generar evidencia útil para la política pública.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="metodologia" class="section">
+    <section id="plan" class="section section--dark">
       <div class="container">
         <div class="section-head">
-          <h2>Metodología</h2>
-          <p>Combinación de análisis cuantitativo y cualitativo para robustez analítica y relevancia en decisiones públicas.</p>
+          <h2 data-i18n="plan.h2">Fases</h2>
+        </div>
+        <ol class="step-list">
+          <li class="step-item accent-red">
+            <span class="step-number">01</span>
+            <div class="step-copy">
+              <h3 data-i18n="plan.card1.h3">Construcción de la base analítica</h3>
+              <p data-i18n="plan.card1.p">Identificación de empresas incubadas y grupo de comparación, integración de variables económicas, financieras, tecnológicas y territoriales, y diseño del protocolo de análisis.</p>
+            </div>
+          </li>
+          <li class="step-item accent-blue">
+            <span class="step-number">02</span>
+            <div class="step-copy">
+              <h3 data-i18n="plan.card2.h3">Estimación del impacto</h3>
+              <p data-i18n="plan.card2.p">Aplicación de estrategias de identificación y modelos cuantitativos para estimar el efecto del programa sobre crecimiento empresarial, innovación tecnológica, empleo cualificado y acceso a financiación.</p>
+            </div>
+          </li>
+          <li class="step-item accent-amber">
+            <span class="step-number">03</span>
+            <div class="step-copy">
+              <h3 data-i18n="plan.card3.h3">Validación cualitativa</h3>
+              <p data-i18n="plan.card3.p">Despliegue del cuestionario estructurado y contraste con startups y gestores para interpretar mecanismos, decisiones estratégicas y factores de arraigo territorial.</p>
+            </div>
+          </li>
+          <li class="step-item accent-teal">
+            <span class="step-number">04</span>
+            <div class="step-copy">
+              <h3 data-i18n="plan.card4.h3">Resultados y transferencia</h3>
+              <p data-i18n="plan.card4.p">Producción de resultados científicos, apertura de la base de datos, elaboración del informe final y formulación de recomendaciones para la mejora del programa y la política pública.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="recursos" class="section section--dark">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="rec.h2">Resultados</h2>
+          <p data-i18n="rec.p">Producción científica, datos abiertos y documentos de trabajo generados en el marco del proyecto.</p>
+        </div>
+        <article class="panel resources-panel">
+          <div class="resources-toolbar" style="grid-template-columns:1fr">
+            <label for="resource-search" class="sr-only">Buscar publicaciones</label>
+            <input id="resource-search" class="search-input" type="search" placeholder="Buscar por título, autor, revista o palabra clave..." data-resource-search data-i18n-placeholder="rec.search.placeholder" />
+          </div>
+          <div class="year-chips" data-year-chips></div>
+          <div class="resource-summary" data-resource-summary></div>
+          <div class="resource-results" data-resource-results></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="equipo" class="section section--dark">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="equipo.h2">Equipo</h2>
+          <p data-i18n="equipo.p">Equipo investigador con experiencia en evaluación de políticas públicas, emprendimiento, innovación, análisis aplicado de datos y conocimiento del sector aeroespacial y su industria.</p>
         </div>
         <div class="card-grid">
-          <article class="card">
-            <h3>Datos integrados</h3>
-            <p>Construcción de base de datos con variables económicas, tecnológicas, laborales y financieras.</p>
+          <article class="card accent-red">
+            <p class="team-name">Enrique Acebo Moral</p>
+            <p class="team-meta" data-i18n="equipo.card1.meta">IP · Profesor Permanente Laboral · ULE</p>
+            <p class="team-links">
+              <a href="https://scholar.google.com/citations?user=7_JEALYAAAAJ&hl=es" target="_blank" rel="noopener" aria-label="Google Scholar"><svg class="icon" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 11-6L12 3z"/></svg> Scholar</a>
+              <a href="https://portalcientifico.unileon.es/investigadores/97692/detalle" target="_blank" rel="noopener" aria-label="ULE"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L4 7v2h16V7l-8-4zM6 11v6H4v2h16v-2h-2v-6h-2v6h-2v-6h-2v6h-2v-6H6z"/></svg> ULE</a>
+              <a href="mailto:e.acebo@unileon.es" aria-label="Email"><svg class="icon icon--stroke" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="m4 8 8 6 8-6"></path></svg> Email</a>
+            </p>
           </article>
-          <article class="card">
-            <h3>Estimación de impacto</h3>
-            <p>Aplicación de Difference-in-Differences, Propensity Score Matching y modelos de supervivencia.</p>
+          <article class="card accent-teal">
+            <p class="team-name">Diego Domínguez Fernández</p>
+            <p class="team-meta" data-i18n="equipo.card2.meta">Profesor Titular · ULE</p>
+            <p class="team-links">
+              <a href="https://scholar.google.com/citations?user=13G41bgAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><svg class="icon" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 11-6L12 3z"/></svg> Scholar</a>
+              <a href="https://portalcientifico.unileon.es/investigadores/97480/detalle" target="_blank" rel="noopener" aria-label="ULE"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L4 7v2h16V7l-8-4zM6 11v6H4v2h16v-2h-2v-6h-2v6h-2v-6h-2v6h-2v-6H6z"/></svg> ULE</a>
+            </p>
           </article>
-          <article class="card">
-            <h3>Validación cualitativa</h3>
-            <p>Entrevistas y cuestionarios para interpretar mecanismos causales y barreras operativas.</p>
+          <article class="card accent-amber">
+            <p class="team-name">José Ángel Miguel Dávila</p>
+            <p class="team-meta" data-i18n="equipo.card3.meta">Catedrático · ULE</p>
+            <p class="team-links">
+              <a href="https://scholar.google.com/citations?user=4FnSndUAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><svg class="icon" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 11-6L12 3z"/></svg> Scholar</a>
+              <a href="https://portalcientifico.unileon.es/investigadores/84076/detalle" target="_blank" rel="noopener" aria-label="ULE"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L4 7v2h16V7l-8-4zM6 11v6H4v2h16v-2h-2v-6h-2v6h-2v-6h-2v6h-2v-6H6z"/></svg> ULE</a>
+            </p>
+          </article>
+          <article class="card accent-teal">
+            <p class="team-name">Jesús Gonzalo de Grado</p>
+            <p class="team-meta" data-i18n="equipo.card4.meta">Catedrático · ULE</p>
+            <p class="team-links">
+              <a href="https://portalcientifico.unileon.es/investigadores/97018/detalle" target="_blank" rel="noopener" aria-label="ULE"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L4 7v2h16V7l-8-4zM6 11v6H4v2h16v-2h-2v-6h-2v6h-2v-6h-2v6h-2v-6H6z"/></svg> ULE</a>
+            </p>
+          </article>
+          <article class="card accent-blue">
+            <p class="team-name">David Hernando Tomé</p>
+            <p class="team-meta" data-i18n="equipo.card5.meta">Investigador predoctoral · ULE</p>
+            <p class="team-links">
+              <a href="https://portalcientifico.unileon.es/investigadores/2219689/detalle" target="_blank" rel="noopener" aria-label="ULE"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L4 7v2h16V7l-8-4zM6 11v6H4v2h16v-2h-2v-6h-2v6h-2v-6h-2v6h-2v-6H6z"/></svg> ULE</a>
+            </p>
+          </article>
+          <article class="card accent-amber">
+            <p class="team-name">Lizbeth Gutiérrez Rodríguez</p>
+            <p class="team-meta" data-i18n="equipo.card6.meta">Investigadora predoctoral · USAL</p>
+            <p class="team-links">
+              <a href="https://scholar.google.at/citations?user=daZzJOEAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg class="icon" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 11-6L12 3z"/></svg> Scholar</a>
+              <a href="https://produccioncientifica.usal.es/investigadores/820293/detalle" target="_blank" rel="noopener" aria-label="USAL"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3L4 7v2h16V7l-8-4zM6 11v6H4v2h16v-2h-2v-6h-2v6h-2v-6h-2v6h-2v-6H6z"/></svg> USAL</a>
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="plan" class="section">
-      <div class="container split">
-        <article class="panel">
-          <h2>Plan de trabajo</h2>
-          <ul class="timeline">
-            <li><strong>Fase 1.</strong> Preparación de muestra, datos y protocolo.</li>
-            <li><strong>Fase 2.</strong> Estimación econométrica y análisis cualitativo.</li>
-            <li><strong>Fase 3.</strong> Contraste con stakeholders y ajuste de resultados.</li>
-            <li><strong>Fase 4.</strong> Entregables, difusión y transferencia.</li>
-          </ul>
-        </article>
-        <article id="equipo" class="panel">
-          <h2>Equipo</h2>
-          <p>Equipo multidisciplinar en políticas públicas, emprendimiento, innovación y análisis de datos.</p>
-          <ul>
-            <li>Coordinación científica y diseño metodológico.</li>
-            <li>Análisis cuantitativo y validación estadística.</li>
-            <li>Trabajo cualitativo y contraste institucional.</li>
-            <li>Comunicación y transferencia de resultados.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="contacto" class="section">
-      <div class="container panel">
-        <h2>Contacto</h2>
-        <p><strong>Dirección:</strong> Facultad de Ciencias Económicas y Empresariales, 24007 León, España.</p>
-        <p><strong>Email:</strong> <a href="mailto:e.acebo@unileon.es">e.acebo@unileon.es</a> · <strong>Teléfono:</strong> (+34) 987 293 487</p>
-        <p><strong>Instituciones:</strong> Universidad de León e Instituto para la Competitividad Empresarial de Castilla y León.</p>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <span>&copy; Proyecto FCT-24-19933</span>
-      <span>Universidad de León</span>
+      <img src="assets/images/logo-fecyt.svg" alt="Ministerio de Ciencia, Innovación y Universidades · FECYT" class="footer-logo" />
+      <img src="assets/images/logo-ule.png" alt="Universidad de León" class="footer-logo footer-logo--ule" />
+      <img src="assets/images/logo-ice.png" alt="Instituto para la Competitividad Empresarial de Castilla y León" class="footer-logo footer-logo--ice" />
+      <img src="assets/images/logo-jcyl.jpg" alt="Junta de Castilla y León" class="footer-logo footer-logo--jcyl" />
     </div>
   </footer>
 
