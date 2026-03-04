@@ -44,14 +44,19 @@ const T = {
 
     // Fases
     'plan.h2': 'Fases',
+    'plan.out.label': 'Resultado:',
     'plan.card1.h3': 'Construcción de la base analítica',
-    'plan.card1.p': 'Identificación de empresas incubadas y grupo de comparación, integración de variables económicas, financieras, tecnológicas y territoriales, y diseño del protocolo de análisis.',
+    'plan.card1.p': 'Identificación de empresas incubadas y grupo de comparación, integración de variables clave y diseño del protocolo analítico.',
+    'plan.card1.out': 'Base analítica y protocolo final.',
     'plan.card2.h3': 'Estimación del impacto',
-    'plan.card2.p': 'Aplicación de estrategias de identificación y modelos cuantitativos para estimar el efecto del programa sobre crecimiento empresarial, innovación tecnológica, empleo cualificado y acceso a financiación.',
+    'plan.card2.p': 'Aplicación de estrategias de identificación y modelos cuantitativos para estimar efectos del programa sobre crecimiento, innovación y empleo.',
+    'plan.card2.out': 'Estimaciones robustas de impacto.',
     'plan.card3.h3': 'Validación cualitativa',
-    'plan.card3.p': 'Despliegue del cuestionario estructurado y contraste con startups y gestores para interpretar mecanismos, decisiones estratégicas y factores de arraigo territorial.',
+    'plan.card3.p': 'Despliegue del cuestionario estructurado y contraste con startups y gestores para interpretar mecanismos, decisiones y arraigo territorial.',
+    'plan.card3.out': 'Mecanismos y arraigo validados.',
     'plan.card4.h3': 'Resultados y transferencia',
-    'plan.card4.p': 'Producción de resultados científicos, apertura de la base de datos, elaboración del informe final y formulación de recomendaciones para la mejora del programa y la política pública.',
+    'plan.card4.p': 'Producción de resultados científicos, apertura de la base de datos y formulación de recomendaciones para mejorar el programa.',
+    'plan.card4.out': 'Resultados abiertos y recomendaciones.',
 
     // Resultados
     'rec.h2': 'Resultados',
@@ -60,7 +65,8 @@ const T = {
     'rec.allcats.chip': 'Todos',
     'rec.cat.datasets': 'Dataset',
     'rec.cat.papers': 'Paper',
-    'rec.cat.reports': 'Report',
+    'rec.cat.reports': 'Informe',
+    'rec.cat.others': 'Otros',
     'rec.result': 'resultado',
     'rec.results': 'resultados',
     'rec.empty': 'No hay resultados para ese filtro. Prueba otra palabra clave o selecciona otra categoría.',
@@ -115,14 +121,19 @@ const T = {
 
     // Phases
     'plan.h2': 'Phases',
+    'plan.out.label': 'Output:',
     'plan.card1.h3': 'Analytical database construction',
-    'plan.card1.p': 'Identification of incubated firms and the comparison group, integration of economic, financial, technological and territorial variables, and design of the analytical protocol.',
+    'plan.card1.p': 'Identification of incubated firms and the comparison group, integration of key variables, and design of the analytical protocol.',
+    'plan.card1.out': 'Analytical database and protocol.',
     'plan.card2.h3': 'Impact estimation',
-    'plan.card2.p': 'Application of identification strategies and quantitative models to estimate the effect of the programme on business growth, technological innovation, skilled employment and access to finance.',
+    'plan.card2.p': 'Application of identification strategies and quantitative models to estimate programme effects on growth, innovation, and employment.',
+    'plan.card2.out': 'Robust impact estimates.',
     'plan.card3.h3': 'Qualitative validation',
-    'plan.card3.p': 'Deployment of the structured questionnaire and validation with startups and managers to interpret mechanisms, strategic decisions and factors of territorial embeddedness.',
+    'plan.card3.p': 'Deployment of the structured questionnaire and validation with startups and managers to interpret mechanisms and territorial embeddedness.',
+    'plan.card3.out': 'Validated mechanisms and embeddedness.',
     'plan.card4.h3': 'Results and transfer',
-    'plan.card4.p': 'Production of scientific results, release of the open database, preparation of the final report and formulation of recommendations to improve the programme and public policy.',
+    'plan.card4.p': 'Production of scientific outputs, release of the open database, and recommendations to improve programme design.',
+    'plan.card4.out': 'Open results and recommendations.',
 
     // Results
     'rec.h2': 'Results',
@@ -132,6 +143,7 @@ const T = {
     'rec.cat.datasets': 'Dataset',
     'rec.cat.papers': 'Paper',
     'rec.cat.reports': 'Report',
+    'rec.cat.others': 'Other',
     'rec.result': 'result',
     'rec.results': 'results',
     'rec.empty': 'No results for that filter. Try another keyword or select a different category.',
@@ -245,11 +257,24 @@ var resourcesData = [
       en: '2025 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · R&R'
     },
     keywords: 'entrepreneurial support organizations new space economy location peers experience startup performance ESO incubator'
+  },
+  {
+    year: 2025,
+    category: 'DATASETS',
+    title: {
+      es: 'ESA-BIC Incubatees',
+      en: 'ESA-BIC Incubatees'
+    },
+    meta: {
+      es: '2025 · Acebo, E., Hernando-Tomé, D. · Las ESA-BIC Incubatees son startups de la red de incubadoras de la Agencia Espacial Europea que reciben apoyo empresarial, mentoría, experiencia técnica y acceso a recursos de la ESA para desarrollar innovaciones espaciales en productos listos para el mercado.',
+      en: '2025 · Acebo, E., Hernando-Tomé, D. · ESA-BIC Incubatees are start-ups in the ESA Business Incubation Centres network receiving tailored business support, mentoring, technical expertise, and access to ESA resources to develop space-related innovations into market-ready products.'
+    },
+    keywords: 'ESA-BIC incubatees dataset startups incubadoras agencia espacial europea space business incubation'
   }
 ];
 
 if (resourceSearch && resourceChips && resourceSummary && resourceResults) {
-  var categories = ['PAPERS', 'DATASETS', 'REPORTS'];
+  var categories = ['PAPERS', 'DATASETS', 'REPORTS', 'OTHERS'];
   var activeCategory = 'all';
   var RESOURCE_LIMIT = 5;
   var showAll = false;
@@ -362,3 +387,35 @@ if (resourceSearch && resourceChips && resourceSummary && resourceResults) {
 
 /* ── Apply initial language ── */
 applyLang(currentLang);
+
+/* ── Scroll-spy: highlight current nav link ── */
+(function () {
+  var navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+  if (!navLinks.length) return;
+
+  var sections = [];
+  navLinks.forEach(function (link) {
+    var id = link.getAttribute('href').slice(1);
+    var el = document.getElementById(id);
+    if (el) sections.push({ el: el, link: link });
+  });
+
+  function update() {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var offset = window.innerHeight * 0.35;
+    var current = sections[0];
+
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].el.offsetTop - offset <= scrollY) {
+        current = sections[i];
+        break;
+      }
+    }
+
+    navLinks.forEach(function (l) { l.classList.remove('current'); });
+    if (current) current.link.classList.add('current');
+  }
+
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
