@@ -1267,6 +1267,35 @@ p {
   font-size: 0.84rem;
 }
 
+.resource-item-links {
+  margin: 0.55rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resource-item-links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0.42rem 0.75rem;
+  background: rgba(0, 50, 71, 0.7);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.resource-item-links a:hover {
+  background: rgba(0, 50, 71, 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
 .card.accent-amber .team-links a,
 .card.accent-teal .team-links a {
   color: #ffffff;

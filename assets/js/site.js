@@ -246,17 +246,21 @@ var resourceResults = document.querySelector('[data-resource-results]');
 
 var resourcesData = [
   {
-    year: 2025,
+    year: 2026,
     category: 'PAPERS',
     title: {
-      es: 'Entrepreneurial Support Organizations in the New Space Economy: Location, Peers, and Experience Effects on Startup Performance',
-      en: 'Entrepreneurial Support Organizations in the New Space Economy: Location, Peers, and Experience Effects on Startup Performance'
+      es: 'Entrepreneurial support organizations in the new space economy: Location, peers, and experience effects on startup performance',
+      en: 'Entrepreneurial support organizations in the new space economy: Location, peers, and experience effects on startup performance'
     },
     meta: {
-      es: '2025 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · R&R',
-      en: '2025 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · R&R'
+      es: '2026 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · Journal of Engineering and Technology Management, 81, 101990 · Acceso abierto (CC BY-NC)',
+      en: '2026 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · Journal of Engineering and Technology Management, 81, 101990 · Open access (CC BY-NC)'
     },
-    keywords: 'entrepreneurial support organizations new space economy location peers experience startup performance ESO incubator'
+    links: [
+      { label: 'DOI', href: 'https://doi.org/10.1016/j.jengtecman.2026.101990' },
+      { label: 'PDF', href: 'assets/docs/10.1016-j.jengtecman.2026.101990.pdf' }
+    ],
+    keywords: 'entrepreneurial support organizations new space economy location peers experience startup performance ESO incubator journal engineering technology management open access'
   },
   {
     year: 2025,
@@ -335,9 +339,16 @@ if (resourceSearch && resourceChips && resourceSummary && resourceResults) {
       var list = items.map(function (item) {
         var titleText = item.title[lang] || item.title.es;
         var metaText = item.meta[lang] || item.meta.es;
+        var linksHtml = '';
+        if (item.links && item.links.length) {
+          linksHtml = '<p class="resource-item-links">' + item.links.map(function (link) {
+            return '<a href="' + link.href + '" target="_blank" rel="noopener">' + link.label + '</a>';
+          }).join('') + '</p>';
+        }
         return '<li class="resource-item">' +
           '<p class="resource-item-title">' + titleText + '</p>' +
           '<p class="resource-item-meta">' + metaText + '</p>' +
+          linksHtml +
           '</li>';
       }).join('');
       return '<section class="resource-year resource-year--' + cat.toLowerCase() + '">' +
