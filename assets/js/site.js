@@ -63,7 +63,6 @@ const T = {
     'rec.p': 'Producción científica, datos abiertos y documentos de trabajo generados en el marco del proyecto.',
     'rec.search.placeholder': 'Buscar por título, autor, revista o palabra clave...',
     'rec.allcats.chip': 'Todos',
-    'rec.cat.datasets': 'Dataset',
     'rec.cat.papers': 'Paper',
     'rec.cat.reports': 'Informe',
     'rec.cat.others': 'Otros',
@@ -140,7 +139,6 @@ const T = {
     'rec.p': 'Scientific outputs, open data and working documents produced within the project.',
     'rec.search.placeholder': 'Search by title, author, journal or keyword...',
     'rec.allcats.chip': 'All',
-    'rec.cat.datasets': 'Dataset',
     'rec.cat.papers': 'Paper',
     'rec.cat.reports': 'Report',
     'rec.cat.others': 'Other',
@@ -253,32 +251,19 @@ var resourcesData = [
       en: 'Entrepreneurial support organizations in the new space economy: Location, peers, and experience effects on startup performance'
     },
     meta: {
-      es: '2026 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · Journal of Engineering and Technology Management, 81, 101990 · Acceso abierto (CC BY-NC)',
-      en: '2026 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · Journal of Engineering and Technology Management, 81, 101990 · Open access (CC BY-NC)'
+      es: '2026 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · Journal of Engineering and Technology Management, 81, 101990',
+      en: '2026 · Hernando-Tomé, D., Acebo, E., Abad-González, J., & Miguel-Dávila, J.Á. · Journal of Engineering and Technology Management, 81, 101990'
     },
     links: [
       { label: 'DOI', href: 'https://doi.org/10.1016/j.jengtecman.2026.101990' },
       { label: 'PDF', href: 'assets/docs/10.1016-j.jengtecman.2026.101990.pdf' }
     ],
     keywords: 'entrepreneurial support organizations new space economy location peers experience startup performance ESO incubator journal engineering technology management open access'
-  },
-  {
-    year: 2025,
-    category: 'DATASETS',
-    title: {
-      es: 'ESA-BIC Incubatees',
-      en: 'ESA-BIC Incubatees'
-    },
-    meta: {
-      es: '2025 · Acebo, E., Hernando-Tomé, D. · Las ESA-BIC Incubatees son startups de la red de incubadoras de la Agencia Espacial Europea que reciben apoyo empresarial, mentoría, experiencia técnica y acceso a recursos de la ESA para desarrollar innovaciones espaciales en productos listos para el mercado.',
-      en: '2025 · Acebo, E., Hernando-Tomé, D. · ESA-BIC Incubatees are start-ups in the ESA Business Incubation Centres network receiving tailored business support, mentoring, technical expertise, and access to ESA resources to develop space-related innovations into market-ready products.'
-    },
-    keywords: 'ESA-BIC incubatees dataset startups incubadoras agencia espacial europea space business incubation'
   }
 ];
 
 if (resourceSearch && resourceChips && resourceSummary && resourceResults) {
-  var categories = ['PAPERS', 'DATASETS', 'REPORTS', 'OTHERS'];
+  var categories = ['PAPERS', 'REPORTS'];
   var activeCategory = 'all';
   var RESOURCE_LIMIT = 5;
   var showAll = false;
